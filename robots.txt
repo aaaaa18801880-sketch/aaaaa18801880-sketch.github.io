@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aaaaa18801880-sketch.github.io/sitemap.xml
