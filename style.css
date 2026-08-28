@@ -249,6 +249,41 @@ footer {
     color: #adb5bd;
 }
 
+/* 플로팅 전화 버튼 */
+.floating-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ff9800;
+    color: #ffffff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.floating-btn:hover {
+    transform: scale(1.05);
+    background-color: #e68a00;
+}
+
+/* 스크롤 페이드인 애니메이션 */
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* 모바일 및 태블릿 반응형 처리 */
 @media (max-width: 768px) {
     header {
@@ -277,5 +312,13 @@ footer {
 
     .rental-content {
         padding: 30px 20px;
+    }
+
+    /* 모바일 환경 플로팅 버튼 크기 조절 */
+    .floating-btn {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px 20px;
+        font-size: 15px;
     }
 }
