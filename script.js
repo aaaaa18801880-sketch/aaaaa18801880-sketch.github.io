@@ -1,4 +1,4 @@
-// 1. 상단 메뉴 클릭 시 부드러운 스크롤 이동
+// 상단 메뉴 클릭 시 부드러운 스크롤 이동
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -8,30 +8,48 @@ document.querySelectorAll('nav a').forEach(anchor => {
         
         if (targetElement) {
             window.scrollTo({
-                top: targetElement.offsetTop - 80, // 상단 헤더 높이만큼 띄움
+                top: targetElement.offsetTop - 80,
                 behavior: 'smooth'
             });
         }
     });
 });
 
-// 2. 스크롤을 내릴 때 화면에 요소가 나타나는 애니메이션 (Fade-in)
+// 스크롤 시 요소 나타나는 애니메이션 (Fade-in)
 const observerOptions = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.15 // 요소가 화면에 15% 이상 보일 때 작동
+    threshold: 0.15
 };
 
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
-            observer.unobserve(entry.target); // 한 번 나타난 후에는 관찰 해제
+            observer.unobserve(entry.target);
         }
     });
 }, observerOptions);
 
-// 클래스명에 'fade-in'이 있는 모든 요소를 찾아 관찰 시작
 document.querySelectorAll('.fade-in').forEach(element => {
     observer.observe(element);
+});
+
+// 모바일 햄버거 메뉴 토글 기능
+const mobileBtn = document.querySelector('.mobile-menu-btn');
+const navMenu = document.querySelector('.nav-menu');
+
+if (mobileBtn) {
+    mobileBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+}
+
+// 모바일에서 메뉴 항목 클릭 시 메뉴창 자동으로 닫히게 하기
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', () => {
+        if (navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+        }
+    });
 });
