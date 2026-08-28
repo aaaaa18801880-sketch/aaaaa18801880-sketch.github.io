@@ -3,13 +3,13 @@
 <head>
     <meta name="viewport" content="width=device-width">
     <title>한밭중고전자 - 전국 배송 가능한 중고 가전 전문 매장</title>
-    <link rel="stylesheet" href="style.css?ver=pro">
+    <link rel="stylesheet" href="style.css?ver=mobile">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!-- 최상단 안내바 -->
     <div class="top-bar">
-        <span>📞 상담문의 010-6631-8179</span>
+        <span>📞 상담문의 공일공-6631-8179</span>
         <span class="divider">|</span>
         <span>🕒 평일/주말 09:00~21:00</span>
         <span class="divider">|</span>
@@ -19,7 +19,9 @@
     <!-- 네비게이션 헤더 -->
     <header>
         <div class="logo">한밭중고전자</div>
-        <nav>
+        <!-- 모바일용 햄버거 메뉴 버튼 추가 -->
+        <div class="mobile-menu-btn">☰</div>
+        <nav class="nav-menu">
             <ul>
                 <li><a href="#hero">홈</a></li>
                 <li><a href="#core-service">핵심 서비스</a></li>
@@ -30,23 +32,20 @@
         </nav>
     </header>
 
-    <!-- 메인 배너 및 빠른 상담 박스 -->
     <section id="hero">
-        <!-- 텍스트 영역 (왼쪽) -->
         <div class="hero-text">
             <span class="badge">대전/충청권 전역 서비스</span>
             <h1>신뢰할 수 있는<br>중고가전 매입/판매</h1>
             <p>살 때도, 팔 때도 한밭중고전자가 정답입니다!</p>
             <div class="hero-buttons">
-                <a href="tel:010-6631-8179" class="btn-tel">📞 전화 상담</a>
+                <a href="tel:공일공-6631-8179" class="btn-tel">📞 전화 상담</a>
                 <a href="https://cafe.naver.com/hanbatmall" target="_blank" class="btn-cafe">네이버 카페</a>
             </div>
         </div>
         
-        <!-- 빠른 상담 폼 (오른쪽) -->
         <div class="hero-box">
             <h3>지금 바로 상담하세요</h3>
-            <div class="phone-number">010-6631-8179</div>
+            <div class="phone-number">공일공-6631-8179</div>
             <ul class="quick-check">
                 <li>✨ 철저한 세척/소독 완료</li>
                 <li>🚚 무료 방문 및 견적</li>
@@ -55,7 +54,6 @@
         </div>
     </section>
 
-    <!-- 매장 소개 이미지 -->
     <section id="store-images" class="fade-in section-padding">
         <div class="container">
             <img src="banner.jpg" alt="한밭중고전자 배너" onerror="this.src='https://placehold.co/1200x300/004aad/ffffff?text=Main+Banner'" style="border-radius: 15px; margin-bottom: 20px;">
@@ -63,7 +61,6 @@
         </div>
     </section>
 
-    <!-- 핵심 서비스 영역 -->
     <section id="core-service" class="fade-in section-padding bg-light">
         <div class="container">
             <h2 class="section-title">핵심 서비스</h2>
@@ -94,7 +91,6 @@
         </div>
     </section>
 
-    <!-- 취급 품목 영역 -->
     <section id="products" class="fade-in section-padding">
         <div class="container">
             <h2 class="section-title">취급 품목</h2>
@@ -130,7 +126,6 @@
         </div>
     </section>
 
-    <!-- 이런 분들께 추천합니다 -->
     <section id="recommend" class="fade-in section-padding bg-light">
         <div class="container">
             <h2 class="section-title">이런 분들께 추천합니다</h2>
@@ -155,7 +150,6 @@
         </div>
     </section>
 
-    <!-- 서비스 지역 -->
     <section id="service-area" class="fade-in section-padding">
         <div class="container text-center">
             <h2 class="section-title">서비스 지역</h2>
@@ -168,7 +162,6 @@
         </div>
     </section>
 
-    <!-- 고객 후기 -->
     <section id="reviews" class="fade-in section-padding bg-light">
         <div class="container">
             <h2 class="section-title">고객 후기</h2>
@@ -194,7 +187,6 @@
         </div>
     </section>
 
-    <!-- 하단 띠배너 -->
     <div class="bottom-banner">
         <div class="container bottom-banner-content">
             <div class="banner-text">
@@ -202,12 +194,11 @@
                 <p>무료방문 · 무료견적 · 비용 부담 없습니다!</p>
             </div>
             <div class="banner-buttons">
-                <a href="tel:010-6631-8179" class="btn-tel-outline">📞 010-6631-8179</a>
+                <a href="tel:공일공-6631-8179" class="btn-tel-outline">📞 공일공-6631-8179</a>
             </div>
         </div>
     </div>
 
-    <!-- 오시는 길 및 푸터 -->
     <footer id="location">
         <div class="container">
             <h2 style="margin-bottom: 20px; color: white;">오시는 길</h2>
@@ -216,14 +207,13 @@
             </div>
             <div class="footer-info">
                 <p><strong>상호:</strong> 한밭중고전자 | <strong>주소:</strong> 대전 중구 대전천서로 691-62 1, 2층 (중촌동 144)</p>
-                <p><strong>전화:</strong> 042-523-8179 / 010-6631-8179 / 010-5406-8179</p>
+                <p><strong>전화:</strong> 042-523-8179 / 공일공-6631-8179 / 공일공-5406-8179</p>
                 <p>Copyright &copy; 한밭중고전자 All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- 플로팅 버튼 -->
-    <a href="tel:010-6631-8179" class="floating-btn">📞 전화 문의</a>
+    <a href="tel:공일공-6631-8179" class="floating-btn">📞 전화 문의</a>
 
     <script src="script.js"></script>
 </body>
