@@ -1,7 +1,4 @@
-/* 웹 폰트(나눔고딕) 불러오기 */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
-
-/* 기본 여백 초기화 및 설정 */
+/* 기본 레이아웃 설정 */
 * {
     margin: 0;
     padding: 0;
@@ -9,10 +6,10 @@
 }
 
 body {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #fdfdfd;
+    background-color: #f8f9fa;
 }
 
 a {
@@ -24,293 +21,194 @@ ul {
     list-style: none;
 }
 
-/* 화면 중앙 정렬 및 최대 넓이 설정 */
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* ---------------- HEADER (상단 메뉴) ---------------- */
+/* 상단 헤더 영역 */
 header {
-    background-color: #ffffff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #1a73e8;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0056b3;
 }
 
-.nav-menu ul {
+nav ul {
     display: flex;
     gap: 30px;
 }
 
-.nav-menu a {
-    font-weight: 500;
-    font-size: 1.1rem;
-    transition: color 0.3s;
+nav a:hover {
+    color: #0056b3;
+    font-weight: bold;
 }
 
-.nav-menu a:hover {
-    color: #1a73e8;
-}
-
-/* ---------------- HERO (메인 배너) ---------------- */
-.hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1550005973-b4e548815170?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') center/cover;
+/* 메인 배너 영역 */
+#hero {
+    background-image: linear-gradient(rgba(0, 40, 100, 0.7), rgba(0, 40, 100, 0.7)), url('image_97d03d.png');
+    background-size: cover;
+    background-position: center;
     color: #ffffff;
     text-align: center;
     padding: 120px 20px;
 }
 
-.hero-content h2 {
-    font-size: 3rem;
+#hero h1 {
+    font-size: 42px;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
-.hero-content p {
-    font-size: 1.3rem;
+#hero p {
+    font-size: 18px;
     margin-bottom: 40px;
+    color: #e9ecef;
 }
 
-.cta-button {
-    display: inline-block;
-    background-color: #ff6b6b;
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    color: #0056b3;
+}
+
+.btn-primary:hover {
+    background-color: #f1f3f5;
+}
+
+.btn-secondary {
+    background-color: transparent;
     color: #ffffff;
-    padding: 15px 35px;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    font-weight: 700;
-    transition: background 0.3s, transform 0.2s;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border: 2px solid #ffffff;
 }
 
-.cta-button:hover {
-    background-color: #fa5252;
-    transform: translateY(-3px);
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* ---------------- COMMON SECTIONS (공통 섹션) ---------------- */
-.section {
-    padding: 80px 0;
-}
-
-.section-title {
+/* 판매 제품 영역 */
+#products {
+    padding: 80px 50px;
     text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 50px;
-    color: #222;
-    position: relative;
 }
 
-.section-title::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 4px;
-    background-color: #1a73e8;
-    margin: 15px auto 0;
+#products h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #212529;
 }
 
-.bg-light {
-    background-color: #f8f9fa;
-}
-
-/* ---------------- ABOUT (회사 소개) ---------------- */
-.section-desc {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.8;
-}
-
-/* ---------------- PRODUCTS (취급 품목) ---------------- */
-.grid-container {
+.product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.grid-item {
-    background: #ffffff;
-    padding: 40px 20px;
-    text-align: center;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-    transition: transform 0.3s;
+.product-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
 }
 
-.grid-item:hover {
+.product-card:hover {
     transform: translateY(-10px);
 }
 
-.grid-item i {
-    color: #1a73e8;
-    margin-bottom: 20px;
+.product-image {
+    height: 250px;
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #adb5bd;
 }
 
-.grid-item h3 {
-    margin-bottom: 15px;
-    font-size: 1.4rem;
+.product-title {
+    font-size: 20px;
+    margin: 20px 0 10px;
+    padding: 0 20px;
 }
 
-.grid-item p {
-    color: #666;
+.product-desc {
+    font-size: 15px;
+    color: #6c757d;
+    padding: 0 20px 25px;
 }
 
-/* ---------------- SERVICES (서비스 안내) ---------------- */
-.service-info {
-    max-width: 800px;
-    margin: 0 auto;
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 12px;
-    border-left: 6px solid #1a73e8;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-}
-
-.service-info p {
-    margin-bottom: 20px;
-    font-size: 1.15rem;
-    color: #444;
-}
-
-.service-info p:last-child {
-    margin-bottom: 0;
-}
-
-/* ---------------- FOOTER (하단 영역) ---------------- */
+/* 하단 푸터 영역 */
 footer {
-    background-color: #2c3e50;
-    color: #ecf0f1;
-    padding: 50px 0 20px;
+    background-color: #343a40;
+    color: #f8f9fa;
+    padding: 50px 20px;
     text-align: center;
 }
 
 .footer-info {
-    margin-bottom: 30px;
-}
-
-.footer-info h3 {
     margin-bottom: 20px;
-    font-size: 1.5rem;
-    font-weight: 700;
+    line-height: 1.8;
 }
 
-.footer-info p {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
+.footer-info a {
+    color: #66b2ff;
+    text-decoration: underline;
 }
 
-.footer-copyright {
-    font-size: 0.9rem;
-    color: #95a5a6;
-    margin-top: 30px;
-    border-top: 1px solid #34495e;
-    padding-top: 20px;
+.footer-info a:hover {
+    color: #99ccff;
 }
 
-/* ---------------- FLOATING BUTTONS (모바일/PC 하단 고정 버튼) ---------------- */
-.floating-buttons {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    z-index: 1000;
+.copyright {
+    font-size: 14px;
+    color: #adb5bd;
 }
 
-.float-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 15px 25px;
-    border-radius: 50px;
-    color: #ffffff;
-    font-size: 1.1rem;
-    font-weight: 700;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    transition: transform 0.2s, background 0.3s;
-}
-
-.float-btn:hover {
-    transform: scale(1.05);
-}
-
-.cafe-btn {
-    background-color: #03c75a; 
-}
-
-.cafe-btn:hover {
-    background-color: #02b350;
-}
-
-.call-btn {
-    background-color: #ff6b6b; 
-}
-
-.call-btn:hover {
-    background-color: #fa5252;
-}
-
-/* ---------------- MOBILE RESPONSIVE (모바일 기기 호환성) ---------------- */
+/* 모바일 및 태블릿 반응형 처리 */
 @media (max-width: 768px) {
-    .header-container {
+    header {
         flex-direction: column;
-        justify-content: center;
-        height: auto;
-        padding: 20px 0;
+        padding: 20px;
     }
 
-    .nav-menu {
+    nav ul {
         margin-top: 15px;
-    }
-
-    .nav-menu ul {
         gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .hero-content h2 {
-        font-size: 2.2rem;
+    #hero h1 {
+        font-size: 28px;
     }
-
-    .hero-content p {
-        font-size: 1.1rem;
+    
+    .cta-buttons {
+        flex-direction: column;
     }
-
-    .floating-buttons {
-        bottom: 0;
-        right: 0;
-        left: 0;
-        flex-direction: row;
-        gap: 0;
-    }
-
-    .float-btn {
-        flex: 1;
-        border-radius: 0;
-        padding: 18px 0;
-        font-size: 1.2rem;
-        box-shadow: none;
-        border-top: 1px solid rgba(0,0,0,0.1);
+    
+    #products {
+        padding: 50px 20px;
     }
 }
