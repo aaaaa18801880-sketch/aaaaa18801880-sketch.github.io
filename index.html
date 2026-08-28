@@ -3,124 +3,228 @@
 <head>
     <meta name="viewport" content="width=device-width">
     <title>한밭중고전자 - 전국 배송 가능한 중고 가전 전문 매장</title>
-    <meta name="description" content="전국 배송 가능한 중고 가전 전문 매장 한밭중고전자! 에어컨, 냉난방기, 업소용 및 가정용 가전 최고가 매입·판매 및 대형 에어컨 렌탈 서비스.">
-    <meta property="og:title" content="한밭중고전자 - 전국 배송 가능한 중고 가전 전문 매장">
-    <meta property="og:description" content="전국 배송 가능한 중고 가전 전문 매장! 에어컨, 냉난방기, 업소용 및 가정용 가전 매입·판매 및 렌탈 전문.">
-    <meta property="og:type" content="website">
-    
-    <link rel="stylesheet" href="style.css?ver=update">
+    <link rel="stylesheet" href="style.css?ver=pro">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- 최상단 안내바 -->
+    <div class="top-bar">
+        <span>📞 상담문의 010-6631-8179</span>
+        <span class="divider">|</span>
+        <span>🕒 평일/주말 09:00~21:00</span>
+        <span class="divider">|</span>
+        <span>🚚 대전/충청권 및 전국 배송 가능</span>
+    </div>
+
+    <!-- 네비게이션 헤더 -->
     <header>
         <div class="logo">한밭중고전자</div>
         <nav>
             <ul>
-                <li><a href="#about">매장 소개</a></li>
-                <li><a href="#products">주요 취급 품목</a></li>
-                <li><a href="#rental">에어컨/냉난방기 렌탈</a></li>
-                <li><a href="#location">오시는 길</a></li>
+                <li><a href="#hero">홈</a></li>
+                <li><a href="#core-service">핵심 서비스</a></li>
+                <li><a href="#products">취급 품목</a></li>
+                <li><a href="#recommend">추천 고객</a></li>
+                <li><a href="#reviews">고객 후기</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="hero" style="padding: 0; line-height: 0;">
-        <!-- 파일명을 banner.jpg로 수정했습니다 -->
-        <img src="banner.jpg" alt="한밭중고전자 메인 배너" style="width: 100%; display: block;" onerror="this.src='https://placehold.co/1920x600/e9ecef/adb5bd?text=Please+Upload+banner.jpg'">
+    <!-- 메인 배너 및 빠른 상담 박스 -->
+    <section id="hero">
+        <!-- 텍스트 영역 (왼쪽) -->
+        <div class="hero-text">
+            <span class="badge">대전/충청권 전역 서비스</span>
+            <h1>신뢰할 수 있는<br>중고가전 매입/판매</h1>
+            <p>살 때도, 팔 때도 한밭중고전자가 정답입니다!</p>
+            <div class="hero-buttons">
+                <a href="tel:010-6631-8179" class="btn-tel">📞 전화 상담</a>
+                <a href="https://cafe.naver.com/hanbatmall" target="_blank" class="btn-cafe">네이버 카페</a>
+            </div>
+        </div>
         
-        <div class="hero-cta-wrapper">
-            <div class="cta-buttons">
-                <button class="btn-primary" onclick="window.open('https://cafe.naver.com/hanbatmall', '_blank')">네이버 카페 방문하기</button>
-                <button class="btn-secondary" onclick="window.open('https://www.daangn.com/kr/local-profile/%ED%95%9C%EB%B0%AD%EC%A4%91%EA%B3%A0%EC%A0%84%EC%9E%90-gqg3ov17usci/', '_blank')">당근마켓 단골 맺기</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="fade-in">
-        <div class="title-sub" style="display:none;">매장 소개</div>
-        <div class="intro-images">
-            <!-- 파일명을 store.jpg로 수정했습니다 -->
-            <img src="store.jpg" alt="한밭중고전자 매장 전경 및 특징" onerror="this.src='https://placehold.co/1200x800/e9ecef/adb5bd?text=Please+Upload+store.jpg'">
-        </div>
-    </section>
-
-    <section id="products" class="fade-in">
-        <div class="title-sub">주요 취급 품목</div>
-        <div class="product-grid">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="aircon.jpg" alt="에어컨 및 냉난방기" onerror="this.src='https://placehold.co/400x250/e9ecef/adb5bd?text=Air+Conditioners'">
-                </div>
-                <div class="title-card">에어컨 및 냉난방기</div>
-                <ul class="product-desc-list">
-                    <li>스탠드 & 투인원</li>
-                    <li>냉난방기 제품</li>
-                    <li>벽걸이 에어컨 & 냉난방기</li>
-                    <li>천장형 에어컨 & 냉난방기</li>
-                </ul>
-            </div>
-            
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="commercial.jpg" alt="업소용 제품" onerror="this.src='https://placehold.co/400x250/e9ecef/adb5bd?text=Commercial+Appliances'">
-                </div>
-                <div class="title-card">업소용 제품</div>
-                <ul class="product-desc-list">
-                    <li>업소용 냉장고</li>
-                    <li>음료 냉장고 & 쇼케이스</li>
-                    <li>식기세척기</li>
-                    <li>각종 주방기구</li>
-                </ul>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="home.jpg" alt="가정용 가전제품" onerror="this.src='https://placehold.co/400x250/e9ecef/adb5bd?text=Home+Appliances'">
-                </div>
-                <div class="title-card">가정용 가전제품</div>
-                <ul class="product-desc-list">
-                    <li>냉장고 (양문형, 소형/일반형)</li>
-                    <li>세탁기 (드럼, 통돌이) & 건조기</li>
-                    <li>TV 및 각종 소형 가전</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="rental" class="fade-in">
-        <div class="rental-content">
-            <div class="title-sub">대형 에어컨 & 냉난방기 렌탈 서비스</div>
-            <p>초기 구매 비용 부담 없이 시원하고 따뜻하게! 행사장, 창고, 사무실, 식당 등 대형 평수에 꼭 필요한 냉난방기 렌탈 서비스를 시작합니다.</p>
-            <ul class="rental-features">
-                <li>✅ 합리적인 월 렌탈료</li>
-                <li>✅ 철저한 사전 점검 및 정기 유지보수</li>
-                <li>✅ 설치부터 수거까지 완벽한 원스톱 서비스</li>
+        <!-- 빠른 상담 폼 (오른쪽) -->
+        <div class="hero-box">
+            <h3>지금 바로 상담하세요</h3>
+            <div class="phone-number">010-6631-8179</div>
+            <ul class="quick-check">
+                <li>✨ 철저한 세척/소독 완료</li>
+                <li>🚚 무료 방문 및 견적</li>
+                <li>💰 최고가 즉시 현금 매입</li>
             </ul>
-            <button class="btn-primary" onclick="location.href='#location'">렌탈 상담 문의하기</button>
         </div>
     </section>
 
-    <section id="location" class="fade-in" style="padding: 80px 20px; background-color: #ffffff; text-align: center;">
-        <div class="title-sub" style="color: #004aad; font-size: 30px; margin-bottom: 40px;">오시는 길</div>
-        <div style="max-width: 1200px; margin: 0 auto; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,20%);">
-            <iframe src="https://maps.google.com/maps?q=대전%20중구%20중촌동%20144&t=&z=17&ie=UTF8&iwloc=&output=embed" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <!-- 매장 소개 이미지 -->
+    <section id="store-images" class="fade-in section-padding">
+        <div class="container">
+            <img src="banner.jpg" alt="한밭중고전자 배너" onerror="this.src='https://placehold.co/1200x300/004aad/ffffff?text=Main+Banner'" style="border-radius: 15px; margin-bottom: 20px;">
+            <img src="store.jpg" alt="매장 전경" onerror="this.src='https://placehold.co/1200x600/e9ecef/adb5bd?text=Store+Image'" style="border-radius: 15px;">
         </div>
     </section>
 
-    <footer class="fade-in">
-        <div class="footer-info">
-            <p><strong>상호:</strong> 한밭중고전자</p>
-            <p><strong>주소:</strong> 대전 중구 중촌동 144 (대전 중구 대전천서로 691-62 일, 이층)</p>
-            <p><strong>상담 및 문의전화:</strong> 042-523-8179 / 공일공-6631-8179 / 공일공-5406-8179</p>
-            <p>
-                <strong>외부 링크:</strong> 
-                <a href="https://cafe.naver.com/hanbatmall" target="_blank">메인 홈페이지(네이버 카페)</a> | 
-                <a href="https://www.daangn.com/kr/local-profile/%ED%95%9C%EB%B0%AD%EC%A4%91%EA%B3%A0%EC%A0%84%EC%9E%90-gqg3ov17usci/" target="_blank">당근마켓 프로필</a>
-            </p>
+    <!-- 핵심 서비스 영역 -->
+    <section id="core-service" class="fade-in section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">핵심 서비스</h2>
+            <p class="section-subtitle">중고가전 판매부터 매입까지 확실하게 책임집니다</p>
+            
+            <div class="service-cards">
+                <div class="service-card border-blue">
+                    <div class="icon">🛒</div>
+                    <h3>중고가전 판매</h3>
+                    <p>세척과 살균이 완료된 S급 중고가전을 합리적인 가격에 판매합니다.</p>
+                    <ul>
+                        <li>✔ 세척/소독/살균 완료</li>
+                        <li>✔ 신속하고 안전한 배송</li>
+                        <li>✔ 안심 A/S 보장</li>
+                    </ul>
+                </div>
+                <div class="service-card border-orange">
+                    <div class="icon">💰</div>
+                    <h3>중고가전 매입</h3>
+                    <p>사용하지 않는 가전제품, 전화 한 통이면 최고가 현금으로 매입합니다.</p>
+                    <ul>
+                        <li>✔ 현장에서 즉시 현금 지급</li>
+                        <li>✔ 무료 방문 수거 서비스</li>
+                        <li>✔ 이사/폐업 시 일괄 매입</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <p class="copyright">Copyright &copy; 한밭중고전자 All rights reserved.</p>
+    </section>
+
+    <!-- 취급 품목 영역 -->
+    <section id="products" class="fade-in section-padding">
+        <div class="container">
+            <h2 class="section-title">취급 품목</h2>
+            <p class="section-subtitle">다양한 가전제품을 최고가에 매입하고 최저가에 판매합니다</p>
+            
+            <div class="category-grid">
+                <div class="category-box">
+                    <div class="cat-icon">❄️</div>
+                    <h4>에어컨/냉난방기</h4>
+                    <p>벽걸이/스탠드/시스템</p>
+                </div>
+                <div class="category-box">
+                    <div class="cat-icon">🧊</div>
+                    <h4>냉장고</h4>
+                    <p>양문형/일반형/소형</p>
+                </div>
+                <div class="category-box">
+                    <div class="cat-icon">🧺</div>
+                    <h4>세탁기/건조기</h4>
+                    <p>드럼/통돌이/건조기</p>
+                </div>
+                <div class="category-box">
+                    <div class="cat-icon">🏪</div>
+                    <h4>업소용가전</h4>
+                    <p>쇼케이스/제빙기/주방기기</p>
+                </div>
+                <div class="category-box">
+                    <div class="cat-icon">📺</div>
+                    <h4>TV/영상가전</h4>
+                    <p>LED/OLED/대형TV</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 이런 분들께 추천합니다 -->
+    <section id="recommend" class="fade-in section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">이런 분들께 추천합니다</h2>
+            <div class="recommend-grid">
+                <div class="rec-box">
+                    <div class="rec-icon">🏠</div>
+                    <p>이사하면서 기존 가전<br>처분이 필요하신 분</p>
+                </div>
+                <div class="rec-box">
+                    <div class="rec-icon">🏢</div>
+                    <p>식당/매장 폐업으로<br>업소용 가전 정리하실 분</p>
+                </div>
+                <div class="rec-box">
+                    <div class="rec-icon">✨</div>
+                    <p>새 가전 교체 전<br>쓰던 가전을 팔고 싶으신 분</p>
+                </div>
+                <div class="rec-box">
+                    <div class="rec-icon">👍</div>
+                    <p>합리적인 가격으로<br>깨끗한 중고를 원하시는 분</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 서비스 지역 -->
+    <section id="service-area" class="fade-in section-padding">
+        <div class="container text-center">
+            <h2 class="section-title">서비스 지역</h2>
+            <p class="section-subtitle">대전/충청권 전역, 어디든 달려갑니다 (전국 화물 배송 가능)</p>
+            <div class="area-tags">
+                <span>📍 대전</span><span>📍 세종</span><span>📍 천안</span>
+                <span>📍 청주</span><span>📍 아산</span><span>📍 공주</span>
+                <span>📍 논산</span><span>📍 금산</span><span>📍 계룡</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 고객 후기 -->
+    <section id="reviews" class="fade-in section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">고객 후기</h2>
+            <p class="section-subtitle">한밭중고전자를 이용하신 고객님들의 생생한 후기입니다</p>
+            
+            <div class="review-grid">
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"이사하면서 냉장고, 세탁기 매입 요청했는데 당일 바로 방문해주시고 현금으로 입금해 주셨어요. 깔끔한 처리 감사합니다!"</p>
+                    <div class="reviewer">대전 김OO 님</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"원룸 자취 시작하면서 세탁기 구매했는데 세척 상태가 정말 깨끗하고 배송도 무료라 너무 좋았습니다. 주변에 추천할게요."</p>
+                    <div class="reviewer">세종 박OO 님</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"카페 폐업하면서 업소용 냉장고랑 제빙기 한꺼번에 처분했습니다. 다른 곳보다 매입가도 잘 쳐주시고 일처리가 빨라서 만족합니다."</p>
+                    <div class="reviewer">천안 이OO 님</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 하단 띠배너 -->
+    <div class="bottom-banner">
+        <div class="container bottom-banner-content">
+            <div class="banner-text">
+                <h3>중고가전, 사고 싶을 때도 팔고 싶을 때도 한밭중고전자!</h3>
+                <p>무료방문 · 무료견적 · 비용 부담 없습니다!</p>
+            </div>
+            <div class="banner-buttons">
+                <a href="tel:010-6631-8179" class="btn-tel-outline">📞 010-6631-8179</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 오시는 길 및 푸터 -->
+    <footer id="location">
+        <div class="container">
+            <h2 style="margin-bottom: 20px; color: white;">오시는 길</h2>
+            <div style="border-radius: 10px; overflow: hidden; margin-bottom: 30px;">
+                <iframe src="https://maps.google.com/maps?q=대전%20중구%20중촌동%20144&t=&z=17&ie=UTF8&iwloc=&output=embed" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <div class="footer-info">
+                <p><strong>상호:</strong> 한밭중고전자 | <strong>주소:</strong> 대전 중구 대전천서로 691-62 1, 2층 (중촌동 144)</p>
+                <p><strong>전화:</strong> 042-523-8179 / 010-6631-8179 / 010-5406-8179</p>
+                <p>Copyright &copy; 한밭중고전자 All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
-    <a href="tel:공일공-6631-8179" class="floating-btn">📞 빠른 전화 상담</a>
+    <!-- 플로팅 버튼 -->
+    <a href="tel:010-6631-8179" class="floating-btn">📞 전화 문의</a>
+
     <script src="script.js"></script>
 </body>
 </html>
