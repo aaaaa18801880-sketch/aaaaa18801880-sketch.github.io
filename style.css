@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
-    line-height: 1.6;
+    line-height: 1.8;
     color: #333;
     background-color: #f8f9fa;
 }
@@ -28,7 +28,7 @@ header {
     align-items: center;
     padding: 20px 50px;
     background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.05);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -74,17 +74,17 @@ nav a:hover {
 .cta-buttons {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 .btn-primary, .btn-secondary {
-    padding: 15px 30px;
-    font-size: 16px;
+    padding: 18px 30px;
+    font-size: 18px;
     font-weight: bold;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: background-color 300ms ease;
 }
 
 .btn-primary {
@@ -103,7 +103,29 @@ nav a:hover {
 }
 
 .btn-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* 매장 소개 영역 (새로 추가) */
+#about {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.intro-images {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.intro-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 
 /* 주요 취급 품목 영역 */
@@ -128,15 +150,15 @@ nav a:hover {
 
 .product-card {
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.05);
+    transition: transform 300ms ease;
     text-align: left;
 }
 
 .product-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
 }
 
 .product-image {
@@ -156,10 +178,10 @@ nav a:hover {
 
 .product-title {
     font-size: 22px;
-    margin: 20px 20px 15px;
+    margin: 20px 20px 20px;
     color: #004aad;
     border-bottom: 2px solid #f1f3f5;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .product-desc-list {
@@ -168,8 +190,8 @@ nav a:hover {
 }
 
 .product-desc-list li {
-    margin-bottom: 8px;
-    padding-left: 15px;
+    margin-bottom: 20px;
+    padding-left: 20px;
     position: relative;
 }
 
@@ -192,8 +214,8 @@ nav a:hover {
     margin: 0 auto;
     background-color: #ffffff;
     padding: 50px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border-radius: 20px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.08);
 }
 
 .rental-content h2 {
@@ -213,13 +235,13 @@ nav a:hover {
     text-align: left;
     display: inline-block;
     margin-bottom: 30px;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: bold;
     color: #212529;
 }
 
 .rental-features li {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 /* 하단 푸터 영역 */
@@ -245,7 +267,7 @@ footer {
 }
 
 .copyright {
-    font-size: 14px;
+    font-size: 18px;
     color: #adb5bd;
 }
 
@@ -256,19 +278,19 @@ footer {
     right: 30px;
     background-color: #ff9800;
     color: #ffffff;
-    padding: 15px 25px;
+    padding: 18px 25px;
     border-radius: 50px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
     z-index: 1000;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 300ms ease, background-color 300ms ease;
     display: flex;
     align-items: center;
 }
 
 .floating-btn:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     background-color: #e68a00;
 }
 
@@ -276,7 +298,7 @@ footer {
 .fade-in {
     opacity: 0;
     transform: translateY(40px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transition: opacity 800ms ease-out, transform 800ms ease-out;
 }
 
 .fade-in.visible {
@@ -292,8 +314,8 @@ footer {
     }
 
     nav ul {
-        margin-top: 15px;
-        gap: 15px;
+        margin-top: 20px;
+        gap: 20px;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -318,7 +340,7 @@ footer {
     .floating-btn {
         bottom: 20px;
         right: 20px;
-        padding: 12px 20px;
-        font-size: 15px;
+        padding: 18px 20px;
+        font-size: 18px;
     }
 }
