@@ -3,113 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="30년 이상의 신뢰와 경험! 대전 중고가전/전자제품 전문 한밭중고전자. 전국 판매 및 무료 출장 매입 안내.">
-    
-    <!-- 구글 검색엔진 소유권 확인 태그 -->
-    <meta name="google-site-verification" content="5Q8KVRdeLBQYI9x7EUnX4dQ1N6rmRqD3D4IydPLDbKU" />
-    
-    <title>한밭중고전자 - 30년 전통의 신뢰</title>
-    
-    <!-- CSS 연결 -->
+    <title>한밭몰 - 중고 전자제품 전문 매입 및 판매</title>
     <link rel="stylesheet" href="style.css">
-    
-    <!-- 아이콘 사용을 위한 FontAwesome 연결 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
     <!-- 헤더 영역 -->
     <header>
-        <div class="container header-container">
-            <h1 class="logo"><a href="#">한밭중고전자</a></h1>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="#about">회사소개</a></li>
-                    <li><a href="#products">취급품목</a></li>
-                    <li><a href="#services">서비스안내</a></li>
-                </ul>
-            </nav>
-        </div>
+        <div class="logo">한밭몰</div>
+        <nav>
+            <ul>
+                <li><a href="#about">회사 소개</a></li>
+                <li><a href="#buy">매입 안내</a></li>
+                <li><a href="#products">판매 제품</a></li>
+                <li><a href="#contact">고객 센터</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- 메인 배너 영역 -->
-    <section id="hero" class="hero-section">
-        <div class="hero-content">
-            <h2>30년 이상의 신뢰와 경험</h2>
-            <p>전국 어디든! 최고의 중고 전자 제품과 서비스를 제공합니다.</p>
-            <a href="tel:010-6631-8179" class="cta-button">지금 바로 전화상담</a>
+    <section id="hero">
+        <h1>신뢰할 수 있는 중고 전자제품 거래</h1>
+        <p>기업용 IT 기기부터 개인용 스마트폰까지, 최고가 매입 및 합리적인 판매</p>
+        <div class="cta-buttons">
+            <button class="btn-primary">매입 신청하기</button>
+            <button class="btn-secondary">판매 제품 보기</button>
         </div>
     </section>
 
-    <!-- 회사 소개 영역 -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">회사 소개</h2>
-            <p class="section-desc">저희 <strong>한밭중고전자</strong>는 30년 이상의 축적된 노하우를 바탕으로 고객님들께 최고의 만족을 드리고 있습니다. 전국구 판매망을 통해 언제 어디서나 믿고 찾을 수 있는 든든한 파트너가 되겠습니다.</p>
-        </div>
-    </section>
-
-    <!-- 취급 품목 영역 -->
-    <section id="products" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">취급 품목</h2>
-            <div class="grid-container">
-                <div class="grid-item">
-                    <i class="fas fa-tv fa-3x"></i>
-                    <h3>대형 가전 / TV / 냉장고</h3>
-                    <p>최상급 상태의 중고 가전제품 매입 및 판매 전문</p>
-                </div>
-                <div class="grid-item">
-                    <i class="fas fa-cogs fa-3x"></i>
-                    <h3>업소용 / 음향 / 중고장비</h3>
-                    <p>식당, 업소, 사무실 중고 집기 및 전자장비</p>
-                </div>
-                <div class="grid-item">
-                    <i class="fas fa-truck fa-3x"></i>
-                    <h3>전국 무료 출장 매입</h3>
-                    <p>신속하고 정확한 견적 산정, 당일 현금 매입</p>
-                </div>
+    <!-- 최신 입고 제품 영역 (이미지 및 소개글) -->
+    <section id="products">
+        <h2>최신 입고 제품</h2>
+        <div class="product-grid">
+            <!-- 제품 아이템 -->
+            <div class="product-card">
+                <div class="product-image">이미지 들어갈 자리</div>
+                <h3 class="product-title">전문가용 노트북</h3>
+                <p class="product-desc">최상급 컨디션, 기업용으로 적합한 고성능 노트북입니다.</p>
+            </div>
+            <div class="product-card">
+                <div class="product-image">이미지 들어갈 자리</div>
+                <h3 class="product-title">프리미엄 스마트폰</h3>
+                <p class="product-desc">S급 상태, 철저한 검수를 마친 스마트폰입니다.</p>
+            </div>
+            <div class="product-card">
+                <div class="product-image">이미지 들어갈 자리</div>
+                <h3 class="product-title">사무용 데스크탑</h3>
+                <p class="product-desc">가성비 우수, 대량 구매 가능한 데스크탑 세트입니다.</p>
             </div>
         </div>
     </section>
 
-    <!-- 서비스 안내 영역 -->
-    <section id="services" class="section">
-        <div class="container">
-            <h2 class="section-title">서비스 안내</h2>
-            <div class="service-info">
-                <p>✔ <strong>전국 판매 & 배송:</strong> 대한민국 어디든 빠르고 안전하게 배송해 드립니다.</p>
-                <p>✔ <strong>철저한 점검 & A/S:</strong> 30년 경력의 전문가가 완벽히 점검한 제품만 판매합니다.</p>
-                <p>✔ <strong>친절한 전화 상담:</strong> 언제든 042-523-8179 / 010-6631-8179로 문의주세요.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 푸터 (하단) 영역 -->
+    <!-- 푸터 영역 -->
     <footer>
-        <div class="container footer-container">
-            <div class="footer-info">
-                <h3>한밭중고전자 고객센터</h3>
-                <p><i class="fas fa-phone-alt"></i> 사무실: <a href="tel:042-523-8179">042-523-8179</a></p>
-                <p><i class="fas fa-mobile-alt"></i> 휴대폰: <a href="tel:010-6631-8179">010-6631-8179</a></p>
-            </div>
-            <div class="footer-copyright">
-                <p>&copy; 2026 한밭중고전자. All Rights Reserved.</p>
-            </div>
-        </div>
+        <p>상호: 한밭몰 | 이메일: info@hanbatmall.com</p>
+        <p>Copyright &copy; 한밭몰 All rights reserved.</p>
     </footer>
-
-    <!-- 떠있는(Floating) 하단 버튼 영역 (모바일 대응) -->
-    <div class="floating-buttons">
-        <a href="https://cafe.naver.com/hanbatmall" target="_blank" class="float-btn cafe-btn">
-            <i class="fas fa-coffee"></i> 네이버 카페
-        </a>
-        <a href="tel:010-6631-8179" class="float-btn call-btn">
-            <i class="fas fa-phone-alt"></i> 전화 문의
-        </a>
-    </div>
-
-    <!-- JS 연결 -->
     <script src="script.js"></script>
 </body>
 </html>
