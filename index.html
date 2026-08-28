@@ -9,8 +9,8 @@
     <meta property="og:description" content="전국 배송 가능한 중고 가전 전문 매장! 에어컨, 냉난방기, 업소용 및 가정용 가전 매입·판매 및 렌탈 전문.">
     <meta property="og:type" content="website">
     
-    <!-- 브라우저 캐시 무효화를 위해 ?ver=update 를 추가했습니다 -->
-    <link rel="stylesheet" href="style.css?ver=update">
+    <!-- 브라우저 캐시 무효화 적용 -->
+    <link rel="stylesheet" href="style.css?ver=final">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -22,19 +22,20 @@
                 <li><a href="#about">매장 소개</a></li>
                 <li><a href="#products">주요 취급 품목</a></li>
                 <li><a href="#rental">에어컨/냉난방기 렌탈</a></li>
-                <li><a href="#contact">오시는 길 및 연락처</a></li>
+                <li><a href="#location">오시는 길</a></li>
             </ul>
         </nav>
     </header>
 
-   <!-- 메인 배너 영역 (이미지로 교체) -->
-    <section id="hero" style="padding: 0;">
+    <!-- 메인 배너 영역 -->
+    <section id="hero" style="padding: 0; line-height: 0;">
         <img src="1_2.jpg" alt="한밭중고전자 메인 배너" style="width: 100%; height: auto; display: block;">
         
-        <!-- 행동 유도 버튼은 이미지 바로 아래에 배치 -->
-        <div class="cta-buttons" style="background-color: #004aad; padding: 20px; margin-top: -5px;">
-            <button class="btn-primary" onclick="window.open('https://cafe.naver.com/hanbatmall', '_blank')">네이버 카페 방문하기</button>
-            <button class="btn-secondary" onclick="window.open('https://www.daangn.com/kr/local-profile/%ED%95%9C%EB%B0%AD%EC%A4%91%EA%B3%A0%EC%A0%84%EC%9E%90-gqg3ov17usci/', '_blank')">당근마켓 단골 맺기</button>
+        <div class="hero-cta-wrapper">
+            <div class="cta-buttons">
+                <button class="btn-primary" onclick="window.open('https://cafe.naver.com/hanbatmall', '_blank')">네이버 카페 방문하기</button>
+                <button class="btn-secondary" onclick="window.open('https://www.daangn.com/kr/local-profile/%ED%95%9C%EB%B0%AD%EC%A4%91%EA%B3%A0%EC%A0%84%EC%9E%90-gqg3ov17usci/', '_blank')">당근마켓 단골 맺기</button>
+            </div>
         </div>
     </section>
 
@@ -44,7 +45,7 @@
         <div class="intro-images">
             <img src="2_2.jpg" alt="한밭중고전자 매장 전경 및 특징">
         </div>
-    </section> 
+    </section>
 
     <!-- 주요 취급 품목 영역 -->
     <section id="products" class="fade-in">
@@ -90,7 +91,7 @@
         </div>
     </section>
 
-    <!-- 신규 사업: 렌탈 영역 -->
+    <!-- 신규 사업 렌탈 영역 -->
     <section id="rental" class="fade-in">
         <div class="rental-content">
             <h2>대형 에어컨 & 냉난방기 렌탈 서비스</h2>
@@ -100,12 +101,21 @@
                 <li>✅ 철저한 사전 점검 및 정기 유지보수</li>
                 <li>✅ 설치부터 수거까지 완벽한 원스톱 서비스</li>
             </ul>
-            <button class="btn-primary" onclick="location.href='#contact'">렌탈 상담 문의하기</button>
+            <button class="btn-primary" onclick="location.href='#location'">렌탈 상담 문의하기</button>
         </div>
     </section>
 
-    <!-- 푸터(고객센터 및 오시는 길) 영역 -->
-    <footer id="contact" class="fade-in">
+    <!-- 오시는 길 및 지도 영역 -->
+    <section id="location" class="fade-in" style="padding: 80px 20px; background-color: #ffffff; text-align: center;">
+        <h2 style="color: #004aad; font-size: 30px; margin-bottom: 40px;">오시는 길</h2>
+        <div style="max-width: 1200px; margin: 0 auto; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+            <!-- 구글 지도 삽입 -->
+            <iframe src="https://maps.google.com/maps?q=대전%20중구%20중촌동%20144&t=&z=17&ie=UTF8&iwloc=&output=embed" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </section>
+
+    <!-- 푸터 영역 -->
+    <footer class="fade-in">
         <div class="footer-info">
             <p><strong>상호:</strong> 한밭중고전자</p>
             <p><strong>주소:</strong> 대전 중구 중촌동 144 (대전 중구 대전천서로 691-62 1, 2층)</p>
